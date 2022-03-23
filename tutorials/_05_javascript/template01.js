@@ -896,7 +896,24 @@ let dateShow = () => {
 // }
 // object2()
 
-//++++++++++++++++++++
+// //++++++++++++++++++++
+// //Object Function
+// let object2 = () => {
+//     let person = {
+//       firstName: 'Hamit',
+//       job: 'Computer Engineer',
+//       middleName: 'Göbek Adı',
+//       lastName : 'Mızrak',
+//       hesaplama: function(sayi1,sayi2){
+//           return sayi1+sayi2;
+//       }
+//     }
+//     console.log(person.hesaplama(10,20))
+//   }
+//   object2()
+
+  //Nested Object: Obje içinde Object
+  //++++++++++++++++++++
 //Object Function
 let object2 = () => {
     let person = {
@@ -906,8 +923,13 @@ let object2 = () => {
       lastName : 'Mızrak',
       hesaplama: function(sayi1,sayi2){
           return sayi1+sayi2;
+      },
+      damar:{
+          damarAdi:"Toplar Damar",
+          damarTuru:"damar turu 4521"
       }
     }
-    console.log(person.hesaplama(10,20))
+    console.log(person);
+    console.log(person.damar.damarAdi);
   }
   object2()
