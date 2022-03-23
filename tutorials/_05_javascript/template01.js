@@ -914,7 +914,28 @@ let dateShow = () => {
 
   //Nested Object: Obje içinde Object
   //++++++++++++++++++++
-//Object Function
+//Object Function-1
+// let object2 = () => {
+//     let person = {
+//       firstName: 'Hamit',
+//       job: 'Computer Engineer',
+//       middleName: 'Göbek Adı',
+//       lastName : 'Mızrak',
+//       hesaplama: function(sayi1,sayi2){
+//           return sayi1+sayi2;
+//       },
+//       damar:{
+//           damarAdi:"Toplar Damar",
+//           damarTuru:"damar turu 4521"
+//       }
+//     }
+//     console.log(person);
+//     console.log(person.damar.damarAdi);
+//   }
+//   object2()
+
+  //++++++++++++++++++++++++++++++++++
+  //Object Function-2
 let object2 = () => {
     let person = {
       firstName: 'Hamit',
@@ -930,6 +951,8 @@ let object2 = () => {
       }
     }
     console.log(person);
-    console.log(person.damar.damarAdi);
+    
+    //console.log(person.damar.damarAdi);
+    console.log(person["damar"]["damarAdi"]);
   }
   object2()
