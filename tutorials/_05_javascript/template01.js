@@ -818,10 +818,12 @@ let dateTutorials=()=>{
 
     //set
     console.log(new Date("2015-1-1"));
+    console.log(new Date(1000000000));
+
 
 }
 
-dateTutorials();
+//dateTutorials();
 
 ///////
 let dateShow=()=>{
@@ -834,3 +836,58 @@ let dateShow=()=>{
 }
 
 //dateShow();
+
+/////////////////////////////////////////////////////////////
+//Object
+//camelCase
+// let object=()=>{
+//     // let array1=[];
+//     let array1=new Array();
+//     console.log(array1)
+
+//     console.log("**************************")
+
+//     // let obj1={};
+//     let obj1=new Object();
+//     console.log(obj1)
+// }
+
+// object();
+//++++++++++++++++++++++++
+// let object2=()=>{
+//     let person={};
+    
+//     //değerler vermek istiyorum
+//     person.firstName="Hamit";
+//     person.job="Computer Engineer";
+//     person.middleName="Göbek Adı";
+
+//     console.log(person);
+// }
+// object2();
+
+//+++++++++++++++++++++++++
+// let object2=()=>{
+//     let person={};
+//     //değerler vermek istiyorum
+//     person.firstName="Hamit";
+//     person.job="Computer Engineer";
+//     person.middleName="Göbek Adı";
+
+//     console.log(person.middleName.toUpperCase());
+// }
+// object2();
+
+//+++++++++++++++++++++++++
+let object2=()=>{
+    let person={
+        firstName:"Hamit",
+        job:"Computer Engineer",
+        middleName:"Göbek Adı"
+    };
+    person.lastName="Mızrak";
+    console.log(person.middleName.toUpperCase());
+    console.log(person);
+}
+object2();
+
