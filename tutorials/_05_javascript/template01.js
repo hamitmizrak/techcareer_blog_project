@@ -815,18 +815,22 @@ let dateTutorials=()=>{
     //get
     console.log(tarih.getHours())
     // console.log(tarih.getFullYear());
+
+    //set
+    console.log(new Date("2015-1-1"));
+
 }
 
-//dateTutorials();
+dateTutorials();
 
 ///////
 let dateShow=()=>{
     // let tarih=new Date();
     // let saat=tarih.getHours();
-    console.log(new Date().getHours())
+    console.log(new Date().getHours());
     let ternary=(new Date().getHours()>=20) ? "az kaldı":"çok zaman var";
     console.log(ternary);
     
 }
 
-dateShow();
+//dateShow();
