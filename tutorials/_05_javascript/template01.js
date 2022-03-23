@@ -10,6 +10,10 @@ multiple line comment
 // document: bu sayfa
 // document.write("Yazı yazdım");
 
+// var sayi5="Merhabalar";// Değişken oluşturma(Declaration) 
+// let sayi6; // variable Declaration
+// let baslangicDegeriVermek=44;// tanımlama(initialization)
+
 /////////////////////////////////////////////
 //variables
 //camel case
@@ -518,19 +522,43 @@ let kelime = 'Html5 Css3 Js Css3 '
 
 ////////////////////////////////////////////////////////////////////////
 //Diziler
-let dizi = ["html5","css3","js"]
+let dizi = ['html5', 'css3', 'js'] //daha hızlı,daha okunaklı
+//console.log(dizi);
 
+let dizi33= [1, 2, 3, "a", "b"," ", "c",-1,-2,-3];
+
+
+// var sayi5="Merhabalar";// Değişken oluşturma(Declaration) 
+// let sayi6; // variable Declaration
+// let baslangicDegeriVermek=44;// tanımlama(initialization)
+
+
+let dizi2 = new Array('html5', 'css3', 'js');
+//console.log(dizi2);
+
+//BAŞ-SON EKLEMEK
+//-----------
 //dizi.push() ==> sona bir eleman eklemek
 //dizi.unshift() ==> başa bir eleman eklemek
+
+//BAŞ-SON ÇIKARMAK
+//-----------
 //dizi.pop() ==> sondan 1 eleman çıkar
 //dizi.shift() ==> baştan 1 eleman çıkar
+
+//SİLMEK
 //delete dizi[0] ==> istediğim indis numarasındaki dizi elemanını silmek
+//splice()
+
+//SIRALAMAK
 //dizi.sort() ==> Küçükten büyüğe doğru sıralamak
 //dizi.reverse() ==> büyükten Küçüğe doğru sıralamak
 
+///////////////////////////////////////////////////////////////
+//DİZİ TUTORIALS
 // console.log(dizi)
-// console.log(dizi[8])
-// console.log(dizi[dizi.length - 1])
+// console.log(dizi[8]) ==> 8.indis=9.eleman
+// console.log(dizi[dizi.length - 1]) //son eleman
 // console.log('+++++++++++++++++++++++++++++++')
 
 // //iterative for
@@ -539,8 +567,7 @@ let dizi = ["html5","css3","js"]
 // }
 
 // console.log('+++++++++++++++++++++++++++++++')
-// console.log('for in')
-
+// console.log('for in'):indis lazımsa
 // //for in
 // for (let temp in dizi) {
 //   console.log(temp + ' ==> ' + dizi[temp])
@@ -548,7 +575,6 @@ let dizi = ["html5","css3","js"]
 
 // console.log('+++++++++++++++++++++++++++++++')
 // console.log('for of')
-
 // //for of
 // for (temp of dizi) {
 //   console.log(temp)
@@ -570,6 +596,8 @@ let dizi = ["html5","css3","js"]
 // for (temp of dizi) {
 //     console.log(temp)
 //   }
+
+
 
 
 //-------
@@ -603,11 +631,86 @@ let dizi = ["html5","css3","js"]
 
 ///////////////////
 //Dizi fonkisyonlarına devam edilecek
-//join() ==> dizideki her bir elemana eklemek için 
-//dizi.join("-logo")
-//console.log(dizi)
-//splice()
 
+// +++ Join ++++
+// array içerisindeki bütün verileri birleştirirek string değer döndürür
+//defaultta virgül ile ayrılır
+
+let joinTutorials= ()=>{
+    let dizi=['java', 'html', 'css', 'js'];
+    console.log(dizi);
+
+    let kelime=dizi.join();
+    // result: "java,html,css,js"
+
+    console.log(typeof kelime)
+
+
+    kelime=dizi.join('');
+      // result: "javahtmlcssjs"
+
+    kelime=dizi.join(' & ');
+    // result: "java&html&css&js"
+    console.log(kelime);
+}
+//joinTutorials();
+
+//concat (Birleştirmek)
+//dizide birleştirmek string birleştirmek için kullanabiliriz.
+function concatTutorials() {
+  let kelime1 = 'Merhabalar'
+  let kelime2 = ' Nasılsınız'
+
+  let birlestir1 = kelime1 + kelime2
+  console.log('1. artı birleştir: ' + birlestir1)
+
+  let birlestir2 = kelime1.concat(kelime2);
+  console.log('2. concat birleştir: ' + birlestir2)
+
+  //dizi birleştirmek
+  const dizi1 = ['1', '2', '3',''];
+  const dizi2 = ['4', '5', '6'];
+
+  //string olarak birleştirir
+  let diziBirlestir1=dizi1+dizi2;
+  console.log(diziBirlestir1)
+  
+  //dizi olarak birleştirir
+  let diziBirlestir2=dizi1.concat(dizi2);
+  console.log(diziBirlestir2)
+
+}
+//concatTutorials();
+
+
+//******************************************* */
+//dizilerde topluca eklemej veya çıkarmak
+//+++ splice() ++++ Ekle veya Sil
+function spliceTutorials() {
+  let dizi55 = [1, 2, 3, 4, 5, 6, 7];
+  console.log(dizi55);
+
+//parametredeki 1.eleman: indisi belirlemek için
+//parametredeki 2.eleman: kaç tane silinceğini
+//  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
+//   console.log(dizi55)
+
+ //parametredeki 1.eleman: indisi belirlemek için
+  dizi55.splice(3,0, 'ekledim',"Yeni"); //0.indisten başla ekleme
+  console.log(dizi55)
+}
+//spliceTutorials();
+
+// +++ slice() +++ dizi kopyalamalak
+function sliceTutorials() {
+  let eskiDizi = [1, 2, 3, 4, 5, 6, 7];
+  console.log(eskiDizi)
+
+  let yeniDizi = eskiDizi.slice(3) //3.indisten başla sonuna kadar kopyala yeniDizi ata
+  console.log(yeniDizi)
+}
+
+//sliceTutorials();
 
 //+++++++++++++++++++++++++++++++++++++++++++
 
@@ -615,41 +718,38 @@ let dizi = ["html5","css3","js"]
 // Kullanıcıdan aldığımız 2 değişkeni hesaplatarıalım?
 // y=3x+5k; x ve k kullanıcıdan alınan sayılara göre hesaplama yapılactır (Arrow function)
 
-let equationWithUnKnow=()=>{
-    let number1,number2,result;
-    number1=Number(prompt("1.sayı"));
-    number2=Number(prompt("2.sayı"));
-    result=3*number1+5*number2;
-    console.log(result)
+let equationWithUnKnow = () => {
+  let number1, number2, result
+  number1 = Number(prompt('1.sayı'))
+  number2 = Number(prompt('2.sayı'))
+  result = 3 * number1 + 5 * number2
+  console.log(result)
 }
 //equationWithUnKnow();
 
-
 //Örnek: 2 Dereceyi fahrenhaya çeviren function (Anonymous function)
-//Kullanıcıdan alınan dereceyi Fahrenhata çeviren function 
+//Kullanıcıdan alınan dereceyi Fahrenhata çeviren function
 //Formül: (dereceSayi * 9 / 5) + 32;
-let toFahrenhayt=function(){
-    let degree,result;
-    degree=Number(prompt("Lütfen dereceyi giriniz"));
-    result=(degree*9/5)+32;
-    console.log(result)
+let toFahrenhayt = function () {
+  let degree, result
+  degree = Number(prompt('Lütfen dereceyi giriniz'))
+  result = (degree * 9) / 5 + 32
+  console.log(result)
 }
 // toFahrenhayt();
 
 //Örnek6:  1'den 10'a kadar sayıların toplamı ancak 5'e bölünebilen sayılar hariç
 // continue
-let totalfiveExcluded=()=>{
-    let sum=0;//başlangıç bir değer: sıfır etkisiz toplama
-    for (let i = 1; i <= 10; i=i+1) {
-        if(i%5===0)
-            continue;
-       sum+=i;
-    }
-    console.log("toplam: "+sum)
+let totalfiveExcluded = () => {
+  let sum = 0 //başlangıç bir değer: sıfır etkisiz toplama
+  for (let i = 1; i <= 10; i = i + 1) {
+    if (i % 5 === 0) continue
+    sum += i
+  }
+  console.log('toplam: ' + sum)
 }
 
-totalfiveExcluded();
-
+//totalfiveExcluded();
 
 //Örnek7:
 // Kullanıcıdan alınan sayıya göre random sayılar oluştursun
@@ -657,28 +757,52 @@ totalfiveExcluded();
 // 1-) Toplamları
 // 2-) Ortalaması
 // 3-) Tek sayı toplamları
-// 4-) Kaç tane Tek sayı 
+// 4-) Kaç tane Tek sayı
 // 5-) çift sayı toplamları
-// 6-) çift tane Tek sayı 
+// 6-) çift tane Tek sayı
 
 //Random
-let rndArray=()=>{
-    //değişkenleri(variable)
-    let rndNumber,firstEndSum=0,number,array=[];
-    number=Number(prompt("Lütfen bir sayı giriniz"));
-    //döngüde rastgele sayı oluşturmak
-    for (let i=0; i<number; i++){
-        rndNumber=Number(Math.round(Math.random()*9+1));
-        array[i]=rndNumber;
-    }
-    console.log(array)
-    firstEndSum=array[0]+array[array.length-1];
-    console.log(firstEndSum)
+let rndArray = () => {
+  //değişkenleri(variable)
+  let rndNumber,
+    firstEndSum = 0,
+    number,
+    array = []
+  number = Number(prompt('Lütfen bir sayı giriniz'))
+  //döngüde rastgele sayı oluşturmak
+  for (let i = 0; i < number; i++) {
+    rndNumber = Number(Math.round(Math.random() * 9 + 1))
+    array[i] = rndNumber
+  }
+  console.log(array)
+  firstEndSum = array[0] + array[array.length - 1]
+  console.log(firstEndSum)
 }
 
 //sonarQube
-rndArray();
+//rndArray();
 
 ///////////////////////////////////////////////////////
 //debug nedir ?
 //debug nasıl atılır ?
+//F5 
+let sayi11=11;
+let sayi22=22;
+let sonuc=sayi11+sayi22;
+console.log(sonuc);
+
+//////////////////////////////////////////
+//diziye parametre göndermek ve almak
+function diziBaslangic(){
+   // let dizi=[1,2,3]; //okunabilirliği,hız açısından iyidir
+    let dizi=new Array(1,2,3);
+    return dizi;
+}
+
+function diziVeriAl(temp){
+    console.log(temp)
+}
+
+//monad 
+diziVeriAl(diziBaslangic());
+
