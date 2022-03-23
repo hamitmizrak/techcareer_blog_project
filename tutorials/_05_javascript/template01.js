@@ -786,10 +786,10 @@ let rndArray = () => {
 //debug nedir ?
 //debug nasıl atılır ?
 //F5 
-let sayi11=11;
-let sayi22=22;
-let sonuc=sayi11+sayi22;
-console.log(sonuc);
+// let sayi11=11;
+// let sayi22=22;
+// let sonuc=sayi11+sayi22;
+// console.log(sonuc);
 
 //////////////////////////////////////////
 //diziye parametre göndermek ve almak
@@ -804,5 +804,29 @@ function diziVeriAl(temp){
 }
 
 //monad 
-diziVeriAl(diziBaslangic());
+//diziVeriAl(diziBaslangic());
 
+
+////////////////////////////////////////////
+//Date
+let dateTutorials=()=>{
+    let tarih=new Date();
+
+    //get
+    console.log(tarih.getHours())
+    // console.log(tarih.getFullYear());
+}
+
+//dateTutorials();
+
+///////
+let dateShow=()=>{
+    // let tarih=new Date();
+    // let saat=tarih.getHours();
+    console.log(new Date().getHours())
+    let ternary=(new Date().getHours()>=20) ? "az kaldı":"çok zaman var";
+    console.log(ternary);
+    
+}
+
+dateShow();
