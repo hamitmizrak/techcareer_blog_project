@@ -75,6 +75,7 @@ let equationWithUnKnow=()=>{
 // 5-) çift sayı toplamları
 // 6-) çift tane Tek sayı 
 
+
 //Örnek8 :Kullanıcının Girdiği Sayının Faktöriyel hesaplama
 
 //Örnek9 Kullanıdan aldığımız kelimeyi tersine çeviren program
@@ -85,6 +86,17 @@ let equationWithUnKnow=()=>{
 // s2-)  başlangıç,bitiş çift  sayıların toplamı
 // s2-)  başlangıç,bitiş  kadar teksayılar  sayıların toplamı
 // s3-)  başlangıç,bitiş sayıların toplamı ancak 5'e bölünebilen sayılar hariç
+
+
+/////////////////////////////////////////////////////////////
+//Object CV 
+//adi
+//soyadi
+//yas
+//diller[]
+//meslek{}
+//emeklilik=function(age){return 2022-age} ==> yaş<18 yaş>=150 (validation)
+//String toUppercase
 
 
 

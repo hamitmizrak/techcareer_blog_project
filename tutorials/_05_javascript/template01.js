@@ -951,8 +951,10 @@ let object2 = () => {
       }
     }
     console.log(person);
-    
+
     //console.log(person.damar.damarAdi);
     console.log(person["damar"]["damarAdi"]);
   }
   object2()
+
+  ///Constructor
