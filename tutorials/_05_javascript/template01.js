@@ -10,7 +10,7 @@ multiple line comment
 // document: bu sayfa
 // document.write("Yazı yazdım");
 
-// var sayi5="Merhabalar";// Değişken oluşturma(Declaration) 
+// var sayi5="Merhabalar";// Değişken oluşturma(Declaration)
 // let sayi6; // variable Declaration
 // let baslangicDegeriVermek=44;// tanımlama(initialization)
 
@@ -525,15 +525,13 @@ let kelime = 'Html5 Css3 Js Css3 '
 let dizi = ['html5', 'css3', 'js'] //daha hızlı,daha okunaklı
 //console.log(dizi);
 
-let dizi33= [1, 2, 3, "a", "b"," ", "c",-1,-2,-3];
+let dizi33 = [1, 2, 3, 'a', 'b', ' ', 'c', -1, -2, -3]
 
-
-// var sayi5="Merhabalar";// Değişken oluşturma(Declaration) 
+// var sayi5="Merhabalar";// Değişken oluşturma(Declaration)
 // let sayi6; // variable Declaration
 // let baslangicDegeriVermek=44;// tanımlama(initialization)
 
-
-let dizi2 = new Array('html5', 'css3', 'js');
+let dizi2 = new Array('html5', 'css3', 'js')
 //console.log(dizi2);
 
 //BAŞ-SON EKLEMEK
@@ -597,9 +595,6 @@ let dizi2 = new Array('html5', 'css3', 'js');
 //     console.log(temp)
 //   }
 
-
-
-
 //-------
 //ÇIKARMA
 //pop() ==> sondan 1 eleman çıkar
@@ -636,22 +631,21 @@ let dizi2 = new Array('html5', 'css3', 'js');
 // array içerisindeki bütün verileri birleştirirek string değer döndürür
 //defaultta virgül ile ayrılır
 
-let joinTutorials= ()=>{
-    let dizi=['java', 'html', 'css', 'js'];
-    console.log(dizi);
+let joinTutorials = () => {
+  let dizi = ['java', 'html', 'css', 'js']
+  console.log(dizi)
 
-    let kelime=dizi.join();
-    // result: "java,html,css,js"
+  let kelime = dizi.join()
+  // result: "java,html,css,js"
 
-    console.log(typeof kelime)
+  console.log(typeof kelime)
 
+  kelime = dizi.join('')
+  // result: "javahtmlcssjs"
 
-    kelime=dizi.join('');
-      // result: "javahtmlcssjs"
-
-    kelime=dizi.join(' & ');
-    // result: "java&html&css&js"
-    console.log(kelime);
+  kelime = dizi.join(' & ')
+  // result: "java&html&css&js"
+  console.log(kelime)
 }
 //joinTutorials();
 
@@ -664,46 +658,44 @@ function concatTutorials() {
   let birlestir1 = kelime1 + kelime2
   console.log('1. artı birleştir: ' + birlestir1)
 
-  let birlestir2 = kelime1.concat(kelime2);
+  let birlestir2 = kelime1.concat(kelime2)
   console.log('2. concat birleştir: ' + birlestir2)
 
   //dizi birleştirmek
-  const dizi1 = ['1', '2', '3',''];
-  const dizi2 = ['4', '5', '6'];
+  const dizi1 = ['1', '2', '3', '']
+  const dizi2 = ['4', '5', '6']
 
   //string olarak birleştirir
-  let diziBirlestir1=dizi1+dizi2;
+  let diziBirlestir1 = dizi1 + dizi2
   console.log(diziBirlestir1)
-  
-  //dizi olarak birleştirir
-  let diziBirlestir2=dizi1.concat(dizi2);
-  console.log(diziBirlestir2)
 
+  //dizi olarak birleştirir
+  let diziBirlestir2 = dizi1.concat(dizi2)
+  console.log(diziBirlestir2)
 }
 //concatTutorials();
-
 
 //******************************************* */
 //dizilerde topluca eklemej veya çıkarmak
 //+++ splice() ++++ Ekle veya Sil
 function spliceTutorials() {
-  let dizi55 = [1, 2, 3, 4, 5, 6, 7];
-  console.log(dizi55);
+  let dizi55 = [1, 2, 3, 4, 5, 6, 7]
+  console.log(dizi55)
 
-//parametredeki 1.eleman: indisi belirlemek için
-//parametredeki 2.eleman: kaç tane silinceğini
-//  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
-//   console.log(dizi55)
+  //parametredeki 1.eleman: indisi belirlemek için
+  //parametredeki 2.eleman: kaç tane silinceğini
+  //  dizi55.splice(2, 4) //2.indisten(3.eleman) 4 tane sil  indis=0 başlar
+  //   console.log(dizi55)
 
- //parametredeki 1.eleman: indisi belirlemek için
-  dizi55.splice(3,0, 'ekledim',"Yeni"); //0.indisten başla ekleme
+  //parametredeki 1.eleman: indisi belirlemek için
+  dizi55.splice(3, 0, 'ekledim', 'Yeni') //0.indisten başla ekleme
   console.log(dizi55)
 }
 //spliceTutorials();
 
 // +++ slice() +++ dizi kopyalamalak
 function sliceTutorials() {
-  let eskiDizi = [1, 2, 3, 4, 5, 6, 7];
+  let eskiDizi = [1, 2, 3, 4, 5, 6, 7]
   console.log(eskiDizi)
 
   let yeniDizi = eskiDizi.slice(3) //3.indisten başla sonuna kadar kopyala yeniDizi ata
@@ -785,7 +777,7 @@ let rndArray = () => {
 ///////////////////////////////////////////////////////
 //debug nedir ?
 //debug nasıl atılır ?
-//F5 
+//F5
 // let sayi11=11;
 // let sayi22=22;
 // let sonuc=sayi11+sayi22;
@@ -793,60 +785,56 @@ let rndArray = () => {
 
 //////////////////////////////////////////
 //diziye parametre göndermek ve almak
-function diziBaslangic(){
-   // let dizi=[1,2,3]; //okunabilirliği,hız açısından iyidir
-    let dizi=new Array(1,2,3);
-    return dizi;
+function diziBaslangic() {
+  // let dizi=[1,2,3]; //okunabilirliği,hız açısından iyidir
+  let dizi = new Array(1, 2, 3)
+  return dizi
 }
 
-function diziVeriAl(temp){
-    console.log(temp)
+function diziVeriAl(temp) {
+  console.log(temp)
 }
 
-//monad 
+//monad
 //diziVeriAl(diziBaslangic());
-
 
 ////////////////////////////////////////////
 //Date
-let dateTutorials=()=>{
-    let tarih=new Date();
+let dateTutorials = () => {
+  let tarih = new Date()
 
-    //get
-    console.log(tarih.getHours())
-    // console.log(tarih.getFullYear());
+  //get
+  console.log(tarih.getHours())
+  // console.log(tarih.getFullYear());
 
-    //set
-    console.log(new Date("2015-1-1"));
-    console.log(new Date(1000000000));
-
-
+  //set
+  console.log(new Date('2015-1-1'))
+  console.log(new Date(1000000000))
 }
 
 //dateTutorials();
 
 ///////
-let dateShow=()=>{
-    // let tarih=new Date();
-    // let saat=tarih.getHours();
-    console.log(new Date().getHours());
-    let ternary=(new Date().getHours()>=20) ? "az kaldı":"çok zaman var";
-    console.log(ternary);
-    
+let dateShow = () => {
+  // let tarih=new Date();
+  // let saat=tarih.getHours();
+  console.log(new Date().getHours())
+  let ternary = new Date().getHours() >= 20 ? 'az kaldı' : 'çok zaman var'
+  console.log(ternary)
 }
 
 //dateShow();
 
 /////////////////////////////////////////////////////////////
-//Object
-//camelCase
+//Object:Bir varlığın özelliklerin toplamıdır
+//object camelCase
+
+//literal Object(Arrow Function)
 // let object=()=>{
 //     // let array1=[];
 //     let array1=new Array();
 //     console.log(array1)
-
 //     console.log("**************************")
-
 //     // let obj1={};
 //     let obj1=new Object();
 //     console.log(obj1)
@@ -856,7 +844,7 @@ let dateShow=()=>{
 //++++++++++++++++++++++++
 // let object2=()=>{
 //     let person={};
-    
+
 //     //değerler vermek istiyorum
 //     person.firstName="Hamit";
 //     person.job="Computer Engineer";
@@ -879,15 +867,47 @@ let dateShow=()=>{
 // object2();
 
 //+++++++++++++++++++++++++
-let object2=()=>{
-    let person={
-        firstName:"Hamit",
-        job:"Computer Engineer",
-        middleName:"Göbek Adı"
-    };
-    person.lastName="Mızrak";
-    console.log(person.middleName.toUpperCase());
-    console.log(person);
-}
-object2();
+// let object2=()=>{
+//     let person={
+//         firstName:"Hamit",
+//         job:"Computer Engineer",
+//         middleName:"Göbek Adı"
+//     };
+//     person.lastName="Mızrak";
+//     person.middleName="ikinci isim değişti";
+//     console.log(person.middleName.toUpperCase());
+//     console.log(person);
+// }
+// object2();
 
+//++++++++++++++++++++++++
+//Object yeni attribures eklemek
+// let object2 = () => {
+//   let person = {
+//     firstName: 'Hamit',
+//     job: 'Computer Engineer',
+//     middleName: 'Göbek Adı',
+//   }
+//   person.lastName = 'Mızrak';
+//   console.log(person.middleName.toUpperCase())
+//   person.middleName = 'İkinci ismi değişti';
+
+//   console.log(person)
+// }
+// object2()
+
+//++++++++++++++++++++
+//Object Function
+let object2 = () => {
+    let person = {
+      firstName: 'Hamit',
+      job: 'Computer Engineer',
+      middleName: 'Göbek Adı',
+      lastName : 'Mızrak',
+      hesaplama: function(sayi1,sayi2){
+          return sayi1+sayi2;
+      }
+    }
+    console.log(person.hesaplama(10,20))
+  }
+  object2()
