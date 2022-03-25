@@ -939,32 +939,31 @@ let dateShow = () => {
 
 //Object Diziler
 let objectArray = () => {
-    let person = {
-      //attributes
-      firstName: 'Hamit',
-      job: 'Computer Engineer',
-      middleName: 'Göbek Adı',
-      lastName : 'Mızrak',
-      //function
-      hesaplama: function(sayi1,sayi2){
-          return sayi1+sayi2;
-      },
-      //object
-      damar:{
-          damarAdi:"Toplar Damar",
-          damarTuru:"damar turu 4521"
-      },
-      diller:["JavaScript","Java","C#","Pyhton"],
-      dillerOzellikler:{
-        roles:"asd",
-
-      }
-    }
-    console.log(person);
-    console.log(person.damar.damarAdi);
-    console.log(person.diller[0])
+  let person = {
+    //attributes
+    firstName: 'Hamit',
+    job: 'Computer Engineer',
+    middleName: 'Göbek Adı',
+    lastName: 'Mızrak',
+    //function
+    hesaplama: function (sayi1, sayi2) {
+      return sayi1 + sayi2
+    },
+    //object
+    damar: {
+      damarAdi: 'Toplar Damar',
+      damarTuru: 'damar turu 4521',
+    },
+    diller: ['JavaScript', 'Java', 'C#', 'Pyhton'],
+    dillerOzellikler: {
+      roles: 'asd',
+    },
   }
-  //objectArray();
+  console.log(person)
+  console.log(person.damar.damarAdi)
+  console.log(person.diller[0])
+}
+//objectArray();
 
 ////////////////////////////////////////////////////////
 //Template Literal ES6:dah kolay işlemler yapmamıza olanak sağlar.
@@ -990,70 +989,70 @@ let objectArray = () => {
 
 //1-)
 //Multi Line Template Literal
-let templateLiteralMultiLine=()=>{
-
-  //escape characters: \n 
-  let normalString="Merhabalar nasılsınız\nAlt satır";
-  console.log(normalString);
+let templateLiteralMultiLine = () => {
+  //escape characters: \n
+  let normalString = 'Merhabalar nasılsınız\nAlt satır'
+  console.log(normalString)
 
   //ES6:
   //Multi Line Template Literal
-  let templateString=`Merhabalar nasılsınız
-Alt satır`;
-  console.log(templateString);
-
+  let templateString = `Merhabalar nasılsınız
+Alt satır`
+  console.log(templateString)
 }
 //templateLiteralMultiLine();
 
-
 //2-)
 //interpolation: değişken çağırmak için ==> `${}`
-let templateLiteralInterpolation=()=>{
-  let adi="Hamit",soyadi="Mızrak";
-  console.log("Adı: "+adi+" soyadı:"+soyadi);
-  console.log(`Adı: ${adi} Soyadı: ${soyadi}`);
+let templateLiteralInterpolation = () => {
+  let adi = 'Hamit',
+    soyadi = 'Mızrak'
+  console.log('Adı: ' + adi + ' soyadı:' + soyadi)
+  console.log(`Adı: ${adi} Soyadı: ${soyadi}`)
 }
-templateLiteralInterpolation();
+//templateLiteralInterpolation();
 
 //3-)
 //Html Template
-let templateLiteralHtmlTemplate=()=>{
-  let adi="Hamit",soyadi="Mızrak";
+let templateLiteralHtmlTemplate = () => {
+  let adi = 'Hamit',
+    soyadi = 'Mızrak'
 
-//   let html=  
-//   "<ul>"+
-//       "<li>"+adi+"</li>"+
-//       "<li>"+soyadi+ "</li>"+
-//   "</ul>";
+  //   let html=
+  //   "<ul>"+
+  //       "<li>"+adi+"</li>"+
+  //       "<li>"+soyadi+ "</li>"+
+  //   "</ul>";
 
-let html= 
-`
+  let html = `
 <ul>
     <li>${adi}</li>
     <li>${soyadi}</li>
 </ul>
-`;
-  document.body.innerHTML=html;
+`
+  document.body.innerHTML = html
 }
-templateLiteralHtmlTemplate();
+//templateLiteralHtmlTemplate();
 
 //+++++++++++++++++++++++++++++++++++++++++
-
-
 //constructor
-
-  //this:
-let thisTutorials=()=>{
-  let person={
-    name:"Hamit",
-    surname:"Mızrak"
+function Student(adi, soyadi, meslek, dogumTarihi) {
+  this.adi = adi
+  this.soyadi = soyadi
+  this.meslek = meslek
+  this.dogumTarihi = dogumTarihi
+  console.log(this)
+  this.yas = function () {
+    return 2022 - dogumTarihi
+    // return new Date().getFullYear()-yas;
   }
-  console.log(person.name+" "+person.surname);
-  console.log(this.surname)
 }
-//thisTutorials();
 
+let sonuc = new Student('Hamit', 'Mızrak', 'BM', 1985)
+console.log(sonuc.yas())
 
+//this
+//console.log(this)
 
 //++++++++++++++++++++++++++++++++++++++++++++
 //CV
