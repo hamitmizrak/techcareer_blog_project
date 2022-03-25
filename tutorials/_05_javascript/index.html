@@ -24,6 +24,16 @@
         })
     });
 </script> -->
+
+<style>
+    .cssAllDom{
+        width: 25%;
+        height: 250px;
+        background-color: red;
+        color:orange;
+    }
+</style>
+
 </head>
 
 <body class="container">
@@ -46,7 +56,22 @@
 <!-- document: çalıştığımız Html sayfasıdır -->
 <!-- dom=JS ile Html veya Css bileşenlerini yönetmeye denir -->
 <p id="paragraf_id" name="paragraf_name" class="paragraf_class"></p>
+
 <button onclick="changeParagraf()" class="btn btn-primary ml-3 mt-3">Dom Click</button>
+<hr>
+
+<div id="div_dom"></div>
+
+
+<button onclick="changeDiv()" class="btn btn-primary ml-3 mt-3">Div Click</button>
+
+<script>
+    function changeDiv(){
+  let valueParagraf=document.getElementById("div_dom");
+  valueParagraf.classList.add("cssAllDom");
+}
+</script>
+
 
 <!-- <form action="">
     <input type="radio" name="adi" id="x1"> JS <br>
