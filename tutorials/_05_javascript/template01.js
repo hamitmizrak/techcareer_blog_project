@@ -969,6 +969,7 @@ let objectArray = () => {
 ////////////////////////////////////////////////////////
 //Template Literal ES6:dah kolay işlemler yapmamıza olanak sağlar.
 //1-)MultiLine Literal
+//2-) interpolation Literal
 
 //+++++++++++++++++++++++++++++++++++++
 // let templateLiteralTutorials=()=>{
@@ -987,8 +988,9 @@ let objectArray = () => {
 // templateLiteralTutorials();
 //+++++++++++++++++++++++++++++++++++++
 
+//1-)
 //Multi Line Template Literal
-let templateLiteralTutorials=()=>{
+let templateLiteralMultiLine=()=>{
 
   //escape characters: \n 
   let normalString="Merhabalar nasılsınız\nAlt satır";
@@ -1001,7 +1003,39 @@ Alt satır`;
   console.log(templateString);
 
 }
-templateLiteralTutorials();
+//templateLiteralMultiLine();
+
+
+//2-)
+//interpolation: değişken çağırmak için ==> `${}`
+let templateLiteralInterpolation=()=>{
+  let adi="Hamit",soyadi="Mızrak";
+  console.log("Adı: "+adi+" soyadı:"+soyadi);
+  console.log(`Adı: ${adi} Soyadı: ${soyadi}`);
+}
+templateLiteralInterpolation();
+
+//3-)
+//Html Template
+let templateLiteralHtmlTemplate=()=>{
+  let adi="Hamit",soyadi="Mızrak";
+
+//   let html=  
+//   "<ul>"+
+//       "<li>"+adi+"</li>"+
+//       "<li>"+soyadi+ "</li>"+
+//   "</ul>";
+
+let html= 
+`
+<ul>
+    <li>${adi}</li>
+    <li>${soyadi}</li>
+</ul>
+`;
+  document.body.innerHTML=html;
+}
+templateLiteralHtmlTemplate();
 
 //+++++++++++++++++++++++++++++++++++++++++
 
