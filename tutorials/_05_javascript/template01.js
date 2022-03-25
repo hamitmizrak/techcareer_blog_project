@@ -1035,21 +1035,34 @@ let templateLiteralHtmlTemplate = () => {
 //templateLiteralHtmlTemplate();
 
 //+++++++++++++++++++++++++++++++++++++++++
-//constructor
+//constructor-1
 function Student(adi, soyadi, meslek, dogumTarihi) {
-  this.adi = adi
-  this.soyadi = soyadi
-  this.meslek = meslek
-  this.dogumTarihi = dogumTarihi
+  this.adi = adi;
+  this.soyadi = soyadi;
+  this.meslek = meslek;
+  this.dogumTarihi = dogumTarihi;
   console.log(this)
   this.yas = function () {
-    return 2022 - dogumTarihi
-    // return new Date().getFullYear()-yas;
+    //return 2022 - dogumTarihi
+    return new Date().getFullYear()-dogumTarihi;
   }
 }
 
 let sonuc = new Student('Hamit', 'Mızrak', 'BM', 1985)
-console.log(sonuc.yas())
+//console.log(sonuc.yas());
+
+//++++++++++++
+//this
+
+
+
+
+
+
+
+
+
+
 
 //this
 //console.log(this)
