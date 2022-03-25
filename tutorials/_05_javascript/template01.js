@@ -1048,11 +1048,32 @@ function Student(adi, soyadi, meslek, dogumTarihi) {
   }
 }
 
-let sonuc = new Student('Hamit', 'Mızrak', 'BM', 1985)
+//let sonuc = new Student('Hamit', 'Mızrak', 'BM', 1985)
 //console.log(sonuc.yas());
 
 //++++++++++++
-//this
+//this: Bu yapı demektir. Bulundumuz Objeyi çağırmak veya root dizini çağırmak
+let thisTutorials=()=>{
+  console.log(this);
+  let sayi=this;
+  //alert(sayi);
+  //return this;
+}
+//thisTutorials()
+
+let thisFunctionTutorials=()=>{
+  let person={
+    adi:"Hamit",
+    soyadi:"Mızrak",
+    adSoyad:function(){
+      return this.adi+" "+this.soyadi;
+    }
+  }
+  console.log(person.adSoyad())
+}
+thisFunctionTutorials();
+
+
 
 
 
