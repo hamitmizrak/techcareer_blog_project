@@ -1090,22 +1090,38 @@ alert("onclick Alert")
 // toplama()
 ///////////////////////////////////////////////////////////
 //DOM
+// function changeParagraf(){
+//   //alert("onclick Alert")
+
+//   // HTML
+//   //ID göre çağırma
+//   // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
+//   // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
+//   // document.getElementById("paragraf_id").innerHTML=Date();
+
+//   //NAME göre çağırma
+//   // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+//   //Class göre çağırma
+//   // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+//    //Tag'e göre çağırma
+//    document.getElementsByTagName("p")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+// }
+
 function changeParagraf(){
-  //alert("onclick Alert")
+  //id
+  let valueParagraf=document.getElementById("paragraf_id");
 
-  //ID göre çağırma
-  // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
-  // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
-  // document.getElementById("paragraf_id").innerHTML=Date();
+  //HTML
+  valueParagraf.innerHTML="<i>Html</i>";
 
-  //NAME göre çağırma
-  // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+  //CSS
+  valueParagraf.style.color="blue";
+  valueParagraf.style.fontSize="25px";
+  valueParagraf.style.border="2px solid rgba(25,55,2,.8)";
 
-  //Class göre çağırma
-  // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
-
-   //Tag'e göre çağırma
-   document.getElementsByTagName("p")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
 }
 
 
