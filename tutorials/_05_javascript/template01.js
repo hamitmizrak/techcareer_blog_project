@@ -957,15 +957,67 @@ let objectArray = () => {
       diller:["JavaScript","Java","C#","Pyhton"],
       dillerOzellikler:{
         roles:"asd",
-        
+
       }
     }
     console.log(person);
     console.log(person.damar.damarAdi);
     console.log(person.diller[0])
   }
-  objectArray();
+  //objectArray();
 
+////////////////////////////////////////////////////////
+//Template Literal ES6:dah kolay işlemler yapmamıza olanak sağlar.
+//1-)MultiLine Literal
+
+//+++++++++++++++++++++++++++++++++++++
+// let templateLiteralTutorials=()=>{
+
+//   let normalString="Merhabalar çift tırnak";
+//   console.log(normalString);
+
+//   let normalString2='Merhabalar çift tırnak';
+//   console.log(normalString2);
+
+//   //ES6:dah kolay işlemler yapmamıza olanak sağlar.
+//   let templateString=`Merhabalar backtick`;
+//   console.log(templateString);
+
+// }
+// templateLiteralTutorials();
+//+++++++++++++++++++++++++++++++++++++
+
+//Multi Line Template Literal
+let templateLiteralTutorials=()=>{
+
+  //escape characters: \n 
+  let normalString="Merhabalar nasılsınız\nAlt satır";
+  console.log(normalString);
+
+  //ES6:
+  //Multi Line Template Literal
+  let templateString=`Merhabalar nasılsınız
+Alt satır`;
+  console.log(templateString);
+
+}
+templateLiteralTutorials();
+
+//+++++++++++++++++++++++++++++++++++++++++
+
+
+//constructor
+
+  //this:
+let thisTutorials=()=>{
+  let person={
+    name:"Hamit",
+    surname:"Mızrak"
+  }
+  console.log(person.name+" "+person.surname);
+  console.log(this.surname)
+}
+//thisTutorials();
 
 
 
