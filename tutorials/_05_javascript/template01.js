@@ -1073,41 +1073,20 @@ let thisFunctionTutorials = () => {
 }
 //thisFunctionTutorials()
 
-
-
 //this
 //console.log(this)
 
-//++++++++++++++++++++++++++++++++++++++++++++
-//CV
-//Object Array
-//Object Function-2
-let object2 = () => {
-  let person = {
-    firstName: 'Hamit',
-    job: 'Computer Engineer',
-    middleName: 'Göbek Adı',
-    lastName: 'Mızrak',
-    hesaplama: function (sayi1, sayi2) {
-      return sayi1 + sayi2
-    },
-    damar: {
-      damarAdi: 'Toplar Damar',
-      damarTuru: 'damar turu 4521',
-    },
-    diller: ['Html5', 'Js'],
-  }
-  console.log(person)
+///////////////////////////
+//Event
 
-  //console.log(person.damar.damarAdi);
-  console.log(person['damar']['damarAdi'])
-  console.log(person.diller[0])
-}
-//object2()
+//DOM
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++
-//   [{}] ??? {[]}
-let temp1 = [{}]
-let temp2 = { dizi: [] }
+//callBackFunction
 
-///Constructor
+//promise
+
+
+
+
+
+
