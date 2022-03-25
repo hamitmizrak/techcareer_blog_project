@@ -1076,16 +1076,40 @@ let thisFunctionTutorials = () => {
 //this
 //console.log(this)
 
-///////////////////////////
+//////////////////////////////////////////////////////////
 //Event: bir olaydan sonra meydana gelebilecek başka olaylar.
 
 function toplama(){
 alert("onclick Alert")
 }
+//onmouse
+//onkey
+//onchange
+//addEventListener
+
 // toplama()
-
+///////////////////////////////////////////////////////////
 //DOM
+function changeParagraf(){
+  //alert("onclick Alert")
 
+  //ID göre çağırma
+  // document.getElementById("paragraf_id").innerHTML="<b>Ben Dom'dan geldim</b>";
+  // document.getElementById("paragraf_id").innerText="<b>Ben Dom'dan geldim</b>";
+  // document.getElementById("paragraf_id").innerHTML=Date();
+
+  //NAME göre çağırma
+  // document.getElementsByName("paragraf_name")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+  //Class göre çağırma
+  // document.getElementsByClassName("paragraf_class")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+
+   //Tag'e göre çağırma
+   document.getElementsByTagName("p")[0].innerHTML="<b>Ben Dom'dan geldim</b>";
+}
+
+
+//////////////////////////////////////////////////////////
 //callBackFunction
 
 //promise
