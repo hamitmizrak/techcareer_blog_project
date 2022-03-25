@@ -875,6 +875,7 @@ let dateShow = () => {
 //     };
 //     person.lastName="Mızrak";
 //     person.middleName="ikinci isim değişti";
+//     person.date=new Date().getHours();
 //     console.log(person.middleName.toUpperCase());
 //     console.log(person);
 // }
@@ -912,8 +913,8 @@ let dateShow = () => {
 //   }
 //   object2()
 
-  //Nested Object: Obje içinde Object
-  //++++++++++++++++++++
+//Nested Object: Obje içinde Object
+//++++++++++++++++++++
 //Object Function-1
 // let object2 = () => {
 //     let person = {
@@ -934,27 +935,70 @@ let dateShow = () => {
 //   }
 //   object2()
 
-  //++++++++++++++++++++++++++++++++++
-  //Object Function-2
-let object2 = () => {
+//++++++++++++++++++++++++++++++++++++++++++
+
+//Object Diziler
+let objectArray = () => {
     let person = {
+      //attributes
       firstName: 'Hamit',
       job: 'Computer Engineer',
       middleName: 'Göbek Adı',
       lastName : 'Mızrak',
+      //function
       hesaplama: function(sayi1,sayi2){
           return sayi1+sayi2;
       },
+      //object
       damar:{
           damarAdi:"Toplar Damar",
           damarTuru:"damar turu 4521"
+      },
+      diller:["JavaScript","Java","C#","Pyhton"],
+      dillerOzellikler:{
+        roles:"asd",
+        
       }
     }
     console.log(person);
-
-    //console.log(person.damar.damarAdi);
-    console.log(person["damar"]["damarAdi"]);
+    console.log(person.damar.damarAdi);
+    console.log(person.diller[0])
   }
-  object2()
+  objectArray();
 
-  ///Constructor
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++
+//CV
+//Object Array
+//Object Function-2
+let object2 = () => {
+  let person = {
+    firstName: 'Hamit',
+    job: 'Computer Engineer',
+    middleName: 'Göbek Adı',
+    lastName: 'Mızrak',
+    hesaplama: function (sayi1, sayi2) {
+      return sayi1 + sayi2
+    },
+    damar: {
+      damarAdi: 'Toplar Damar',
+      damarTuru: 'damar turu 4521',
+    },
+    diller: ['Html5', 'Js'],
+  }
+  console.log(person)
+
+  //console.log(person.damar.damarAdi);
+  console.log(person['damar']['damarAdi'])
+  console.log(person.diller[0])
+}
+//object2()
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++
+//   [{}] ??? {[]}
+let temp1 = [{}]
+let temp2 = { dizi: [] }
+
+///Constructor
