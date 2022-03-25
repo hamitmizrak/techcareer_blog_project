@@ -1037,14 +1037,14 @@ let templateLiteralHtmlTemplate = () => {
 //+++++++++++++++++++++++++++++++++++++++++
 //constructor-1
 function Student(adi, soyadi, meslek, dogumTarihi) {
-  this.adi = adi;
-  this.soyadi = soyadi;
-  this.meslek = meslek;
-  this.dogumTarihi = dogumTarihi;
+  this.adi = adi
+  this.soyadi = soyadi
+  this.meslek = meslek
+  this.dogumTarihi = dogumTarihi
   console.log(this)
   this.yas = function () {
     //return 2022 - dogumTarihi
-    return new Date().getFullYear()-dogumTarihi;
+    return new Date().getFullYear() - dogumTarihi
   }
 }
 
@@ -1053,35 +1053,25 @@ function Student(adi, soyadi, meslek, dogumTarihi) {
 
 //++++++++++++
 //this: Bu yapı demektir. Bulundumuz Objeyi çağırmak veya root dizini çağırmak
-let thisTutorials=()=>{
-  console.log(this);
-  let sayi=this;
+let thisTutorials = () => {
+  console.log(this)
+  let sayi = this
   //alert(sayi);
   //return this;
 }
 //thisTutorials()
 
-let thisFunctionTutorials=()=>{
-  let person={
-    adi:"Hamit",
-    soyadi:"Mızrak",
-    adSoyad:function(){
-      return this.adi+" "+this.soyadi;
-    }
+let thisFunctionTutorials = () => {
+  let person = {
+    adi: 'Hamit',
+    soyadi: 'Mızrak',
+    adSoyad: function () {
+      return this.adi + ' ' + this.soyadi
+    },
   }
-  console.log(person.adSoyad())
+  console.log(person)
 }
-thisFunctionTutorials();
-
-
-
-
-
-
-
-
-
-
+//thisFunctionTutorials()
 
 
 
