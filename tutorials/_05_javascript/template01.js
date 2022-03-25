@@ -1077,7 +1077,12 @@ let thisFunctionTutorials = () => {
 //console.log(this)
 
 ///////////////////////////
-//Event
+//Event: bir olaydan sonra meydana gelebilecek başka olaylar.
+
+function toplama(){
+alert("onclick Alert")
+}
+// toplama()
 
 //DOM
 
